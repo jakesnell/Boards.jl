@@ -12,7 +12,7 @@ First make sure `~tang/bin` is on your `PYTHONPATH` by adding
 `export PYTHONPATH=~tang/bin:$PYTHONPATH` to your `~/.bashrc`. You can then
 reserve a board as follows:
 
-```
+```julia
 using Boards
 getboard()
 
@@ -27,7 +27,7 @@ important to get a board *before* importing such libraries, or else the
 environment variables will not be set properly. Here is an example of how to
 use `Boards.jl` together with `Mocha.jl`:
 
-```
+```julia
 using Boards
 ENV["MOCHA_GPU_DEVICE"] = getboard()
 ENV["MOCHA_USE_CUDA"] = "true"
