@@ -2,4 +2,4 @@ using Boards
 using Base.Test
 
 # write your own tests here
-@test 1 == 1
+@test getboard() >= 0
